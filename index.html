@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <script src="https://kit.fontawesome.com/aed9f1b82b.js" crossorigin="anonymous"></script>
+       
     </head>
     <body>
         
@@ -21,45 +22,39 @@
                 </div>
        
             <div class="section1">
-                <input type="text" class="search" placeholder="what do you need to do?">
-                <label for="search" class="click"><button>ADD</button></label><br><br>
+                <input type="text" class="search" id="inputBox" placeholder="what do you need to do?">
+                <button onclick="addTask()">ADD</button><br><br>
             </div>
-        <main>
-            <div class="section2">
-                <div class=""><input type="radio" class="one">
+        <main class="sect">
+            <ul class= "section2" id="list">
+                <li class=""><input type="radio" class="one">
                     <label for="one">Personal Work No. 1</label>
                     <a href="#"><i class="fa-solid fa-trash"></i></a>
-                </div>
-                <hr>
+                    <hr>
+                </li>
+                
 
-                <div class=""><input type="radio" class="two">
+                <li class=""><input type="radio" class="one">
                     <label for="two">Personal Work NO. 2</label>
                     <a href="#"><i class="fa-solid fa-trash"></i></a>
-                </div>
-                <hr>
+                    <hr>
+                </li>
+               
 
-                <div class=""><input type="radio" class="three">
+                <li class=""><input type="radio" class="one">
                     <label for="two">Personal Work NO. 3</label>
                     <a href="#"><i class="fa-solid fa-trash"></i></a>
-                </div>
-                <hr>
+                    <hr>
+                </li>
+                  
 
-                <div class=""><input type="radio" class="four">
-                    <label for="two">Personal Work NO. 4</label>
-                    <a href="#"><i class="fa-solid fa-trash"></i></a>
-                 </div>   
-                 <hr>
-
-                <div class=""><input type="radio" class="five">
-                        <label for="two">Personal Work NO. 5</label>
-                        <a href="#"><i class="fa-solid fa-trash"></i></a>
-                    </div>
-                        <hr>     
-            </div>           
+            </ul>           
             <div class="section3">
-                    <div><a href="#"><i class="fa-solid fa-delete-left"></i></a></div>
+                    <div><a href="#" onclick="clearCompleted()"><i class="fa-solid fa-delete-left"></i></a></div>
                     <div class="complete"><p class="complete">Clear Completed</p></div>
             </div>
-    </main>
+        </main>
+
+        <script src="myScript.js"></script>
     </body>
 </html>
